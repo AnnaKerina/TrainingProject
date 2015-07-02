@@ -10,10 +10,6 @@ namespace Blog.Store.Entity.Tests
     [TestFixture]
     public class UserStoreTests
     {
-//        static Mock<IDatabaseContext> _mockDbContext = new Mock<IDatabaseContext>();
-//        UserStore _userStore = new UserStore(_mockDbContext.Object);
-
-//        [SetUp]
         public void CreateMockObject()
         {
 

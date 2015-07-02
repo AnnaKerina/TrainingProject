@@ -1,0 +1,12 @@
+D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\bin\Debug\Blog.Store.Entity.dll.config
+D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\bin\Debug\Blog.Store.Entity.dll
+D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\bin\Debug\Blog.Store.Entity.pdb
+D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\bin\Debug\Blog.IStore.dll
+D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\bin\Debug\EntityFramework.dll
+D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\bin\Debug\Models.dll
+D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\bin\Debug\Blog.IStore.pdb
+D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\bin\Debug\Models.pdb
+D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\bin\Debug\EntityFramework.xml
+D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\obj\Debug\Blog.Store.Entity.csprojResolveAssemblyReference.cache
+D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\obj\Debug\Blog.Store.Entity.dll
+D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\obj\Debug\Blog.Store.Entity.pdb

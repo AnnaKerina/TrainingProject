@@ -13,29 +13,24 @@ namespace Blog.Store.Entity
             _databaseContext = databaseContext;
         }
 
-        public DbSet<T> EntityDb 
-        {
-            get { return _databaseContext.Set<T>(); }
-        }
-
         public void Add(T item)
         {
-            EntityDb.Add(item);
+            _databaseContext.Set<T>().Add(item);
         }
 
         public void Remove(T item)
         {
-            EntityDb.Remove(item);
+            _databaseContext.Set<T>().Remove(item);
         }
 
         public IList<T> GetAll()
         {
-            return EntityDb.ToList();
+            return _databaseContext.Set<T>().ToList();
         }
 
         public T GetById(int id)
         {
-            return EntityDb.Find(id);
+            return _databaseContext.Set<T>().Find(id);
         }
     }
 }

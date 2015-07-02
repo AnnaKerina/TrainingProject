@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing.Web", "Routing\Routing.Web.csproj", "{1B67F6F0-0709-4297-BDDE-F5716A744848}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{913B6A53-D872-43ED-A3E8-9F02B633DAFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing.Tests", "Routing.Tests\Routing.Tests.csproj", "{E2DCE8F5-DCB6-43EB-B03E-5D3FF2C4463B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B67F6F0-0709-4297-BDDE-F5716A744848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B67F6F0-0709-4297-BDDE-F5716A744848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B67F6F0-0709-4297-BDDE-F5716A744848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B67F6F0-0709-4297-BDDE-F5716A744848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{913B6A53-D872-43ED-A3E8-9F02B633DAFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{913B6A53-D872-43ED-A3E8-9F02B633DAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{913B6A53-D872-43ED-A3E8-9F02B633DAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{913B6A53-D872-43ED-A3E8-9F02B633DAFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2DCE8F5-DCB6-43EB-B03E-5D3FF2C4463B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2DCE8F5-DCB6-43EB-B03E-5D3FF2C4463B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2DCE8F5-DCB6-43EB-B03E-5D3FF2C4463B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2DCE8F5-DCB6-43EB-B03E-5D3FF2C4463B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

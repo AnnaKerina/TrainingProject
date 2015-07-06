@@ -1,15 +1,22 @@
 ﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 
 namespace Blog.Store.Entity
 {
-    public class GenericRepository<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly IDatabaseContext _databaseContext;
 
         public GenericRepository(IDatabaseContext databaseContext)
         {
             _databaseContext = databaseContext;
+        }
+
+
+        public DbSet<T> EntityDbSet
+        {
+            get { return _databaseContext.Set<T>(); }
         }
 
         public void Add(T item)
@@ -22,14 +29,19 @@ namespace Blog.Store.Entity
             _databaseContext.Set<T>().Remove(item);
         }
 
-        public IList<T> GetAll()
+        public virtual void Update(T item, int id)
         {
-            return _databaseContext.Set<T>().ToList();
+            
         }
 
         public T GetById(int id)
         {
             return _databaseContext.Set<T>().Find(id);
+        }
+
+        public IList<T> GetAll()
+        {
+            return _databaseContext.Set<T>().ToList(); 
         }
     }
 }

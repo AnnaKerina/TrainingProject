@@ -3,8 +3,11 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using AutoMapper;
 using Castle.Windsor;
+using Models;
 using Routing.Common.IoC;
+using Routing.Models;
 
 namespace Routing
 {
@@ -31,6 +34,9 @@ namespace Routing
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             ControllerBuilder.Current.SetControllerFactory(typeof(CastleWindsorControllerFactory));
+
+            Mapper.CreateMap<AddUserViewModel, User>();
+            Mapper.CreateMap<AddPostViewModel, Post>();
         }
     }
 }

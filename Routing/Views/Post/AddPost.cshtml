@@ -1,0 +1,24 @@
+﻿@model Routing.Models.AddPostViewModel
+
+@{
+    ViewBag.Title = "AddPost";
+}
+
+<section class="grid col-three-quarters mq2-col-two-thirds mq3-col-full">
+    @using (Html.BeginForm("AddPost", "Post", FormMethod.Post))
+         {
+             @Html.AntiForgeryToken()
+
+
+             @Html.Label("Title")
+             @Html.EditorFor(x => x.Title)
+        
+             @Html.Label("Image")
+             <input type="file" name="Image" value="Browse" />
+
+             @Html.Label("Text")
+             @Html.TextAreaFor(x => x.Text)
+        
+            <input type="submit" value="Submit"/>
+         }
+</section>

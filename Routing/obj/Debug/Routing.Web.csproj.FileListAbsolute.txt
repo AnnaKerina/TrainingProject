@@ -60,3 +60,8 @@ D:\Projects\TraningProject\TrainingProject\Routing\bin\Castle.Core.dll
 D:\Projects\TraningProject\TrainingProject\Routing\bin\Castle.Windsor.dll
 D:\Projects\TraningProject\TrainingProject\Routing\bin\Castle.Core.xml
 D:\Projects\TraningProject\TrainingProject\Routing\bin\Castle.Windsor.xml
+D:\Projects\TraningProject\TrainingProject\Routing\bin\AutoMapper.Net4.dll
+D:\Projects\TraningProject\TrainingProject\Routing\bin\AutoMapper.dll
+D:\Projects\TraningProject\TrainingProject\Routing\bin\AutoMapper.pdb
+D:\Projects\TraningProject\TrainingProject\Routing\bin\AutoMapper.xml
+D:\Projects\TraningProject\TrainingProject\Routing\bin\AutoMapper.Net4.pdb

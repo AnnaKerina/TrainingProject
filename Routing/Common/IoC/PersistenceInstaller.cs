@@ -20,6 +20,18 @@ namespace Routing.Common.IoC
                 .For<IUserStore>()
                 .ImplementedBy<UserStore>()
                 .LifeStyle.Transient);
+
+            container.Register(Component
+                .For<IPostStore>()
+                .ImplementedBy<PostStore>()
+                .LifeStyle.Transient
+                );
+
+            container.Register(Component
+                .For<IUnitOfWork>()
+                .ImplementedBy<UnitOfWork>()
+                .LifeStyle.Transient
+                );
         }
     }
 }

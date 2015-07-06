@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using Models;
@@ -35,27 +36,34 @@ namespace Blog.Store.Entity.Tests
                 new User { Id = 3 }, 
             }.AsQueryable();
 
-            var mockSet = new Mock<DbSet<User>>();
-            mockSet.As<IQueryable<User>>().Setup(m => m.Provider).Returns(data.Provider);
-            mockSet.As<IQueryable<User>>().Setup(m => m.Expression).Returns(data.Expression);
-            mockSet.As<IQueryable<User>>().Setup(m => m.ElementType).Returns(data.ElementType);
-            mockSet.As<IQueryable<User>>().Setup(m => m.GetEnumerator()).Returns(data.GetEnumerator());
-
+//            var mockSet = new Mock<DbSet<User>>();
+//            mockSet.As<IQueryable<User>>().Setup(m => m.Provider).Returns(data.Provider);
+//            mockSet.As<IQueryable<User>>().Setup(m => m.Expression).Returns(data.Expression);
+//            mockSet.As<IQueryable<User>>().Setup(m => m.ElementType).Returns(data.ElementType);
+//            mockSet.As<IQueryable<User>>().Setup(m => m.GetEnumerator()).Returns(data.GetEnumerator());
+//
             var mockContext = new Mock<IDatabaseContext>();
-            mockContext.Setup(c => c.Users).Returns(mockSet.Object); 
+//            mockContext.Setup(x => x.Set<User>()).Returns(mockSet.Object);
 
             var userStore = new UserStore(mockContext.Object);
 
+            var studentMockRepository = new MockRepository();
+
+            var userRepositoryMock = new Mock<IGenericRepository<User>>();
+
+
+            userRepositoryMock.Setup(x => x.GetAll()).Returns(studentMockRepository.Users);
 
             var user = new User
             {
-                Id = 2
+                Id = 5
             };
 
-            userStore.AddUser(user);
-            var result = userStore.GetById(2);
+             var i = userStore.GetById(1);
+             var a = 0;
+//            var result = userStore.GetById(2);
 
-            Assert.IsNotNull(result);
+//            Assert.IsNotNull(result);
 
         }
     }

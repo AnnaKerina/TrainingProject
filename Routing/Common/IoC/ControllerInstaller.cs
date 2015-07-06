@@ -14,6 +14,12 @@ namespace Routing.Common.IoC
                 .ImplementedBy<HomeController>()
                 .LifeStyle.Transient
             );
+
+            container.Register(Component
+                .For<PostController>()
+                .ImplementedBy<PostController>()
+                .LifeStyle.Transient
+                );
         }
     }
 }

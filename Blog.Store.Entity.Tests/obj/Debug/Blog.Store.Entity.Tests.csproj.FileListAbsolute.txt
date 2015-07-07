@@ -16,3 +16,5 @@ D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity.Tests\bin\Debug\nun
 D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity.Tests\obj\Debug\Blog.Store.Entity.Tests.csprojResolveAssemblyReference.cache
 D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity.Tests\obj\Debug\Blog.Store.Entity.Tests.dll
 D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity.Tests\obj\Debug\Blog.Store.Entity.Tests.pdb
+D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity.Tests\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity.Tests\bin\Debug\EntityFramework.SqlServer.xml

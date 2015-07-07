@@ -29,12 +29,12 @@ namespace Blog.Store.Entity
         public void RemovePost(int id)
         {
             var deletedPost = EntityDbSet.Find(id);
-            EntityDbSet.Remove(deletedPost);
+            Remove(deletedPost);
         }
 
         public Post GetLastPost()
         {
-            return EntityDbSet.Last();
+            return EntityDbSet.LastOrDefault();
         }
     }
 }

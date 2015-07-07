@@ -1,5 +1,25 @@
-﻿@{
+﻿@model Routing.Models.ViewPostViewModel
+
+@{
     ViewBag.Title = "ViewPosts";
 }
 
-<h2>ViewPosts</h2>
+<section class="grid col-three-quarters mq2-col-two-thirds mq3-col-full">
+    <article class="post">
+        <h2>
+            <a href="blogpost.html" class="post-title">@Model.Title</a>
+        </h2>
+        <div class="meta">
+            <p>
+                Posted on <span class="time">@Model.DateCreated</span> by <a href="#" class="fn">@Model.Name @Model.Surname</a> in <a href="#" class="cat">Other</a> with <a href="#" class="comments-link">42 comments</a>.
+            </p>
+        </div>
+        <div class="entry">
+            <img src="#" alt="Alternate Text" />
+            <p>@Model.Text</p>
+        </div>
+        <footer>
+            <a href="blogpost.html" class="more-link">Continue reading…</a>
+        </footer>
+    </article>
+</section>

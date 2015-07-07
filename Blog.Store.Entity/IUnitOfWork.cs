@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Blog.Store.Entity
+﻿namespace Blog.Store.Entity
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork
     {
         void Save();
     }

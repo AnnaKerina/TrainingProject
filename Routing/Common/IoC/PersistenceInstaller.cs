@@ -14,7 +14,8 @@ namespace Routing.Common.IoC
                 .For<IDatabaseContext>()
                 .ImplementedBy<DatabaseContext>()
                 .DependsOn(Dependency.OnValue("nameOrConnectionString", "DefaultConnection"))
-                .LifeStyle.Transient);
+                .LifeStyle.Transient
+                );
 
             container.Register(Component
                 .For<IUserStore>()

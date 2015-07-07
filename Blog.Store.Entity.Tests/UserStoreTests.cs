@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using Models;
@@ -11,59 +10,28 @@ namespace Blog.Store.Entity.Tests
     [TestFixture]
     public class UserStoreTests
     {
-        public void CreateMockObject()
+        [Test]
+        public void Check_GetById()
         {
 
-            var mockDbContext = new Mock<IDatabaseContext>();
-            var mockDbSetUser = new Mock<DbSet<User>>();
-            mockDbSetUser.Setup(x => x.Find(1)).Returns(new User
+            var post = new Post
             {
                 Id = 1
-            });
-
-            mockDbContext.Setup(x => x.Users).Returns(mockDbSetUser.Object);
-
-        }
-
-        [Test]
-        public void CheckAddUser()
-        {
-
-            var data = new List<User> 
-            { 
-                new User { Id = 1 }, 
-                new User { Id = 2 }, 
-                new User { Id = 3 }, 
-            }.AsQueryable();
-
-//            var mockSet = new Mock<DbSet<User>>();
-//            mockSet.As<IQueryable<User>>().Setup(m => m.Provider).Returns(data.Provider);
-//            mockSet.As<IQueryable<User>>().Setup(m => m.Expression).Returns(data.Expression);
-//            mockSet.As<IQueryable<User>>().Setup(m => m.ElementType).Returns(data.ElementType);
-//            mockSet.As<IQueryable<User>>().Setup(m => m.GetEnumerator()).Returns(data.GetEnumerator());
-//
-            var mockContext = new Mock<IDatabaseContext>();
-//            mockContext.Setup(x => x.Set<User>()).Returns(mockSet.Object);
-
-            var userStore = new UserStore(mockContext.Object);
-
-            var studentMockRepository = new MockRepository();
-
-            var userRepositoryMock = new Mock<IGenericRepository<User>>();
-
-
-            userRepositoryMock.Setup(x => x.GetAll()).Returns(studentMockRepository.Users);
-
-            var user = new User
-            {
-                Id = 5
             };
+            var postDbSetMock = new Mock<DbSet<Post>>();
+            postDbSetMock.Setup(x => x.Find(1))
+                .Returns(post);
 
-             var i = userStore.GetById(1);
-             var a = 0;
-//            var result = userStore.GetById(2);
+            var databaseContextMock = new Mock<IDatabaseContext>();
+            databaseContextMock.Setup(x => x.Set<Post>())
+                .Returns(postDbSetMock.Object);
 
-//            Assert.IsNotNull(result);
+            var postStore = new PostStore(databaseContextMock.Object);
+
+            var result = postStore.GetById(1);
+
+            Assert.IsNotNull(result);
+            Assert.AreEqual(post, result);
 
         }
     }

@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Web.Mvc;
 
 namespace Routing.Controllers
 {
@@ -9,16 +10,6 @@ namespace Routing.Controllers
         public ActionResult Index()
         {
             
-            return View();
-        }
-
-        public ActionResult SecondPage()
-        {
-            return View();
-        }
-
-        public ActionResult ThirdPage()
-        {
             return View();
         }
 

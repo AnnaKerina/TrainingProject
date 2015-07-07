@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Data.Entity;
 
 namespace Blog.Store.Entity
 {
@@ -6,12 +7,12 @@ namespace Blog.Store.Entity
     {
         void Add(T item);
         
-        IList<T> GetAll();
-        
         T GetById(int id);
        
         void Remove(T item);
 
         void Update(T item, int id);
+
+        DbSet<T> EntityDbSet { get; }
     }
 }

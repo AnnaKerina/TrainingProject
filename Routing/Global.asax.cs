@@ -37,6 +37,7 @@ namespace Routing
 
             Mapper.CreateMap<AddUserViewModel, User>();
             Mapper.CreateMap<AddPostViewModel, Post>();
+            Mapper.CreateMap<Post, ViewPostViewModel>();
         }
     }
 }

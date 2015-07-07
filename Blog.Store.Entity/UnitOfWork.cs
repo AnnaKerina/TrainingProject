@@ -2,16 +2,14 @@
 
 namespace Blog.Store.Entity
 {
-    public class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork, IDisposable
     {
-
         private readonly IDatabaseContext _databaseContext;
         private bool _disposed;
 
         public UnitOfWork(IDatabaseContext databaseContext)
         {
             _databaseContext = databaseContext;
-            _disposed = false;
         }
 
         public void Save()
@@ -25,15 +23,16 @@ namespace Blog.Store.Entity
             GC.SuppressFinalize(this);
         }
 
-        protected virtual void Dispose(bool disposing)
+        public virtual void Dispose(bool disposing)
         {
-            if (this._disposed) return;
-            if (disposing)
+            if (!_disposed)
             {
-                _databaseContext.Dispose();
+                if (disposing)
+                {
+                    _databaseContext.Dispose();
+                }
             }
-
-            this._disposed = true;
+            _disposed = true;
         }
     }
 }

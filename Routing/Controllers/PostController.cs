@@ -32,15 +32,7 @@ namespace Routing.Controllers
         {
             var newPost = Mapper.Map<Post>(model);
             newPost.Comments = new List<Comment>();
-            newPost.User = new User
-            {
-                Age = 10,
-                Name = "Ivan",
-                DateCreated = DateTime.UtcNow,
-                Surname = "Ivanov",
-                Summary = "IIIIIIII",
-                Posts = new List<Post>()
-            };
+            newPost.User = new User();
             _postStore.AddPost(newPost);
             _unitOfWork.Save();
             return RedirectToAction("ViewPosts", "Post");
@@ -50,6 +42,7 @@ namespace Routing.Controllers
         {
             var posts = _postStore.GetLastPost();
             var viewPost = Mapper.Map<ViewPostViewModel>(posts);
+
             return View(viewPost);
         }
 

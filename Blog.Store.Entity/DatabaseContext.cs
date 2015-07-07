@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+using System.Reflection;
 using Models;
 
 namespace Blog.Store.Entity
@@ -14,5 +15,13 @@ namespace Blog.Store.Entity
         public DbSet<User> Users { get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<Comment> Comments { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            Assembly configurationAssembly = Assembly.GetAssembly(GetType());
+            modelBuilder.Configurations.AddFromAssembly(configurationAssembly);
+        }
     }
 }

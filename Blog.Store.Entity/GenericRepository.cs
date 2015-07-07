@@ -38,10 +38,5 @@ namespace Blog.Store.Entity
         {
             return _databaseContext.Set<T>().Find(id);
         }
-
-        public IList<T> GetAll()
-        {
-            return _databaseContext.Set<T>().ToList(); 
-        }
     }
 }

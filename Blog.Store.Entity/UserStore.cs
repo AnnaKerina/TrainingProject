@@ -9,7 +9,6 @@ namespace Blog.Store.Entity
 
 
         private static readonly IDatabaseContext _databaseContext;
-//        private readonly GenericRepository<User> _userRepository = new GenericRepository<User>(_databaseContext);
 
         public UserStore(IDatabaseContext databaseContext)
             : base(databaseContext)

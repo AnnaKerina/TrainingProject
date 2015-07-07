@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
+﻿using System.Data.Entity;
 using Models;
 using Moq;
 using NUnit.Framework;

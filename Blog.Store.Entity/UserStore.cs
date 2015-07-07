@@ -9,7 +9,7 @@ namespace Blog.Store.Entity
 
 
         private static readonly IDatabaseContext _databaseContext;
-        private readonly GenericRepository<User> _userRepository = new GenericRepository<User>(_databaseContext);
+//        private readonly GenericRepository<User> _userRepository = new GenericRepository<User>(_databaseContext);
 
         public UserStore(IDatabaseContext databaseContext)
             : base(databaseContext)
@@ -20,7 +20,7 @@ namespace Blog.Store.Entity
         public void AddUser(User user)
         {
             user.DateCreated = DateTime.UtcNow;
-            _userRepository.Add(user);
+            Add(user);
         }
 
         public void EditUser(User user, int userId)
@@ -37,7 +37,7 @@ namespace Blog.Store.Entity
 
         public void RemoveUser(int userId)
         {
-            _userRepository.Remove(GetById(userId));
+            Remove(GetById(userId));
         }
     }
 }

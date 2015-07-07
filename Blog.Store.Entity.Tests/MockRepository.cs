@@ -18,5 +18,17 @@ namespace Blog.Store.Entity.Tests
                 };
             }
         }
+
+        public Post Post
+        {
+            get
+            {
+                return new Post
+                {
+                    Id = 1,
+                    Title = "Title"
+                };
+            }
+        }
     }
 }

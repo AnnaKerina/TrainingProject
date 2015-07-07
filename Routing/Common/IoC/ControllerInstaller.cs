@@ -2,6 +2,7 @@
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 using Routing.Controllers;
+using Component = Castle.MicroKernel.Registration.Component;
 
 namespace Routing.Common.IoC
 {

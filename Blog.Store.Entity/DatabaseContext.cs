@@ -16,12 +16,12 @@ namespace Blog.Store.Entity
         public DbSet<Post> Posts { get; set; }
         public DbSet<Comment> Comments { get; set; }
 
-//        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-//        {
-//            base.OnModelCreating(modelBuilder);
-//
-//            Assembly configurationAssembly = Assembly.GetAssembly(GetType());
-//            modelBuilder.Configurations.AddFromAssembly(configurationAssembly);
-//        }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            Assembly configurationAssembly = Assembly.GetAssembly(GetType());
+            modelBuilder.Configurations.AddFromAssembly(configurationAssembly);
+        }
     }
 }

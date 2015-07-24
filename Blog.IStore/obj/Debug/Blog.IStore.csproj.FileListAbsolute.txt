@@ -5,3 +5,5 @@ D:\Projects\TraningProject\TrainingProject\Blog.IStore\bin\Debug\Models.pdb
 D:\Projects\TraningProject\TrainingProject\Blog.IStore\obj\Debug\Blog.IStore.csprojResolveAssemblyReference.cache
 D:\Projects\TraningProject\TrainingProject\Blog.IStore\obj\Debug\Blog.IStore.dll
 D:\Projects\TraningProject\TrainingProject\Blog.IStore\obj\Debug\Blog.IStore.pdb
+D:\Projects\TraningProject\TrainingProject\Blog.IStore\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\TraningProject\TrainingProject\Blog.IStore\bin\Debug\Microsoft.AspNet.Identity.Core.xml

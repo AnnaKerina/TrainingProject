@@ -11,10 +11,10 @@ namespace Blog.Store.Entity.Tests
             {
                 return new List<User>
                 {
-                    new User{Id = 1, Name = "Ivan", Age = 24},
-                    new User{Id = 2, Name = "Vitaly", Age = 39},
-                    new User{Id = 3, Name = "Viktor", Age = 28},
-                    new User{Id = 4, Name = "Alex", Age = 32},
+                    new User{Id = 1, UserName = "Ivan", Age = 24},
+                    new User{Id = 2, UserName = "Vitaly", Age = 39},
+                    new User{Id = 3, UserName = "Viktor", Age = 28},
+                    new User{Id = 4, UserName = "Alex", Age = 32},
                 };
             }
         }
@@ -28,6 +28,14 @@ namespace Blog.Store.Entity.Tests
                     Id = 1,
                     Title = "Title"
                 };
+            }
+        }
+
+        public User User
+        {
+            get
+            {
+                return new User {Id = 1, UserName = "Ivan", Age = 24};
             }
         }
     }

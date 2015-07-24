@@ -65,12 +65,6 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Routing\Routing.Web.csproj">
-      <Project>{1B67F6F0-0709-4297-BDDE-F5716A744848}</Project>
-      <Name>Routing.Web</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

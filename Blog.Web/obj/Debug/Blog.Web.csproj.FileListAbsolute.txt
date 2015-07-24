@@ -53,3 +53,13 @@ D:\Projects\TraningProject\TrainingProject\Blog.Web\bin\Microsoft.Owin.Security.
 D:\Projects\TraningProject\TrainingProject\Blog.Web\obj\Debug\Blog.Web.csprojResolveAssemblyReference.cache
 D:\Projects\TraningProject\TrainingProject\Blog.Web\obj\Debug\Blog.Web.dll
 D:\Projects\TraningProject\TrainingProject\Blog.Web\obj\Debug\Blog.Web.pdb
+D:\Projects\TraningProject\TrainingProject\Blog.Web\bin\Models.dll
+D:\Projects\TraningProject\TrainingProject\Blog.Web\bin\Models.pdb
+D:\Projects\TraningProject\TrainingProject\Blog.Web\bin\Blog.IStore.dll
+D:\Projects\TraningProject\TrainingProject\Blog.Web\bin\Blog.Store.Entity.dll
+D:\Projects\TraningProject\TrainingProject\Blog.Web\bin\Castle.Core.dll
+D:\Projects\TraningProject\TrainingProject\Blog.Web\bin\Castle.Windsor.dll
+D:\Projects\TraningProject\TrainingProject\Blog.Web\bin\Blog.IStore.pdb
+D:\Projects\TraningProject\TrainingProject\Blog.Web\bin\Blog.Store.Entity.pdb
+D:\Projects\TraningProject\TrainingProject\Blog.Web\bin\Castle.Core.xml
+D:\Projects\TraningProject\TrainingProject\Blog.Web\bin\Castle.Windsor.xml

@@ -12,3 +12,5 @@ D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\obj\Debug\Blog.Stor
 D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\obj\Debug\Blog.Store.Entity.pdb
 D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\bin\Debug\EntityFramework.SqlServer.dll
 D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\TraningProject\TrainingProject\Blog.Store.Entity\bin\Debug\Microsoft.AspNet.Identity.Core.xml
